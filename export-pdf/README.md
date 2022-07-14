@@ -1,4 +1,6 @@
 ```javascript
+import moment from 'moment'
+
 const elm = document.querySelector('#exportPdf')
 exportPdf(elm, {
   output: 'export_file_' + moment().format('MMDDYYYY'),
@@ -6,7 +8,7 @@ exportPdf(elm, {
     scale: 2,
     backgroundColor: '#0B1A48'
   },
-  pdfContentWidth: 1800, //el.clientWidth
+  pdfContentWidth: 1800,
   margin: 20,
   preview: true,
   jsPDF: {
